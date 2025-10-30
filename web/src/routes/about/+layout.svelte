@@ -49,12 +49,6 @@
                 icon={IconChecklist}
                 iconColor="green"
             />
-            <PageNavTab
-                path="/about/credits"
-                title={$t("about.page.credits")}
-                icon={IconHeartHandshake}
-                iconColor="magenta"
-            />
         </PageNavSection>
     </svelte:fragment>
 
