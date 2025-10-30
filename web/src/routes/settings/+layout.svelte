@@ -42,12 +42,6 @@
                 icon={IconSunHigh}
                 iconColor="blue"
             />
-            <PageNavTab
-                path="/settings/accessibility"
-                title={$t("settings.page.accessibility")}
-                icon={IconAccessible}
-                iconColor="purple"
-            />
         </PageNavSection>
 
         <PageNavSection>
@@ -70,41 +64,6 @@
                 iconColor="green"
             />
         </PageNavSection>
-
-        <PageNavSection>
-            <PageNavTab
-                path="/settings/local"
-                title={$t("settings.page.local")}
-                icon={IconCpu}
-                iconColor="blue"
-            />
-            <PageNavTab
-                path="/settings/instances"
-                title={$t("settings.page.instances")}
-                icon={IconWorld}
-                iconColor="purple"
-            />
-        </PageNavSection>
-
-        <PageNavSection>
-            <PageNavTab
-                path="/settings/privacy"
-                title={$t("settings.page.privacy")}
-                icon={IconLock}
-                iconColor="gray"
-            />
-            <PageNavTab
-                path="/settings/advanced"
-                title={$t("settings.page.advanced")}
-                icon={IconAdjustmentsStar}
-            />
-            {#if $settings.advanced.debug}
-                <PageNavTab
-                    path="/settings/debug"
-                    title={$t("settings.page.debug")}
-                    icon={IconBug}
-                />
-            {/if}
         </PageNavSection>
     </svelte:fragment>
 
