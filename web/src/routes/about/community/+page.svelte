@@ -17,9 +17,28 @@
         class="two"
         class:one={buttonContainerWidth < 500}
     >
+        <AboutSupport
+            platform="github"
+            externalLink={contacts.github}
+        />
+
+        {#if $locale === "ru"}
             <AboutSupport
-                platform="email"
-                window.open("mailto:hcaresyou@gmail.com");
+                platform="telegram"
+                externalLink={contacts.telegram_ru}
+            />
+        {:else}
+            <AboutSupport
+                platform="discord"
+                externalLink={contacts.discord}
+            />
+            <AboutSupport
+                platform="twitter"
+                externalLink={contacts.twitter}
+            />
+            <AboutSupport
+                platform="bluesky"
+                externalLink={contacts.bluesky}
             />
         {/if}
     </div>
