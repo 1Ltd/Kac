@@ -48,6 +48,18 @@ const config = {
             precompress: false,
             strict: true
         }),
+        prerender: {
+            handleHttpError: ({ path, referrer, message }) => {
+                if (
+                    path.endsWith("version.json") ||
+                    message.includes("could not parse remote")
+                ) {
+                    console.warn("⚠️ Ignoring prerender error on", path);
+                    return;
+                }
+                throw new Error(message);
+            }
+        },
         csp: {
             mode: "hash",
             directives: {
