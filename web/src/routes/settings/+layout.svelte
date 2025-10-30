@@ -43,7 +43,6 @@
                 iconColor="blue"
             />
         </PageNavSection>
-
         <PageNavSection>
             <PageNavTab
                 path="/settings/video"
@@ -63,7 +62,6 @@
                 icon={IconFileDownload}
                 iconColor="green"
             />
-        </PageNavSection>
         </PageNavSection>
     </svelte:fragment>
 
