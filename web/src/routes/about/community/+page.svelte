@@ -17,30 +17,10 @@
         class="two"
         class:one={buttonContainerWidth < 500}
     >
-        <AboutSupport
-            platform="github"
-            externalLink={contacts.github}
-        />
-
-        {#if $locale === "ru"}
             <AboutSupport
-                platform="telegram"
-                externalLink={contacts.telegram_ru}
+                platform="email"
+                externalLink={mailto:hcaresyou@gmail.com}
             />
-        {:else}
-            <AboutSupport
-                platform="discord"
-                externalLink={contacts.discord}
-            />
-            <AboutSupport
-                platform="twitter"
-                externalLink={contacts.twitter}
-            />
-            <AboutSupport
-                platform="bluesky"
-                externalLink={contacts.bluesky}
-            />
-        {/if}
     </div>
 
     <div class="subtext support-note">
