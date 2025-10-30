@@ -19,7 +19,7 @@
     >
             <AboutSupport
                 platform="email"
-                window.open("mailto:hcaresyou@gmail.com");}
+                window.open("mailto:hcaresyou@gmail.com");
             />
         {/if}
     </div>
