@@ -18,9 +18,9 @@
         class:one={buttonContainerWidth < 500}
     >
             <AboutSupport
-                platform="email"
-                externalLink={mailto:hcaresyou@gmail.com}
-            />
+    platform="email"
+    externalLink="mailto:hcaresyou@gmail.com"
+/>
     </div>
 
     <div class="subtext support-note">
