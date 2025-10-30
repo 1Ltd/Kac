@@ -1,5 +1,5 @@
 {
-    "name": "@imput/cobalt-web",
+    "name": "kac",
     "version": "11.3",
     "type": "module",
     "private": true,
@@ -17,12 +17,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/imputnet/cobalt.git"
+        "url": "git+https://github.com/1Ltd/kac.git"
     },
     "bugs": {
-        "url": "https://github.com/imputnet/cobalt/issues"
+        "url": "https://github.com/1Ltd/kac/issues"
     },
-    "homepage": "https://cobalt.tools/",
+    "homepage": "https://kac.pw/",
     "devDependencies": {
         "@eslint/js": "^9.5.0",
         "@fontsource/ibm-plex-mono": "^5.0.13",
