@@ -38,9 +38,9 @@ const platformIcons = {
             <IconExternalLink />
         </div>
     </div>
-    <div class="subtext support-card-description">
-        {$t(`about.support.${platform}`)}
-    </div>
+    <!-- <div class="subtext support-card-description">
+    {$t(`about.support.${platform}`)}
+</div> -->
 </button>
 
 <style>
