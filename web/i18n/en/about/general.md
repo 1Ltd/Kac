@@ -1,67 +1,63 @@
-<script lang="ts">
-    import { t } from "$lib/i18n/translations";
-    import { contacts, docs } from "$lib/env";
-
-    import SectionHeading from "$components/misc/SectionHeading.svelte";
-</script>
-
-<section id="summary">
-<SectionHeading
-    title={$t("about.heading.summary")}
-    sectionId="summary"
-/>
-
-cobalt helps you save anything from your favorite websites: video, audio, photos or gifs. just paste the link and you're ready to rock!
-
-no ads, trackers, paywalls, or other nonsense. just a convenient web app that works anywhere, whenever you need it.
-</section>
-
-<section id="motivation">
-<SectionHeading
-    title={$t("about.heading.motivation")}
-    sectionId="motivation"
-/>
-
-cobalt was created for public benefit, to protect people from ads and malware pushed by alternative downloaders.
-we believe that the best software is safe, open, and accessible. all imput project follow these basic principles.
-</section>
-
-<section id="privacy-efficiency">
-<SectionHeading
-    title={$t("about.heading.privacy_efficiency")}
-    sectionId="privacy-efficiency"
-/>
-
-all requests to the backend are anonymous and all information about potential file tunnels is encrypted.
-we have a strict zero log policy and don't store or track *anything* about individual people.
-
-if a request requires additional processing, such as remuxing or transcoding, cobalt processes media
-directly on your device. this ensures best efficiency and privacy.
-
-if your device doesn't support local processing, then server-based live processing is used instead.
-in this scenario, processed media is streamed directly to client, without ever being stored on server's disk.
-
-you can [enable forced tunneling](/settings/privacy#tunnel) to boost privacy even further.
-when enabled, cobalt will tunnel all downloaded files, not just those that require it.
-no one will know where you download something from, even your network provider.
-all they'll see is that you're using a cobalt instance.
-</section>
-
-<section id="community">
-<SectionHeading
-    title={$t("about.heading.community")}
-    sectionId="community"
-/>
-
-cobalt is used by countless artists, educators, and content creators to do what they love.
-we're always on the line with our community and work together to make cobalt even more useful.
-feel free to [join the conversation](/about/community)!
-
-we believe that the future of the internet is open, which is why cobalt is
-[source first](https://sourcefirst.com/) and [easily self-hostable]({docs.instanceHosting}).
-
-if your friend hosts a processing instance, just ask them for a domain and [add it in instance settings](/settings/instances#community).
-
-you can check the source code and contribute [on github]({contacts.github}) at any time.
-we welcome all contributions and suggestions!
+<script lang="ts">  
+    import { t } from "$lib/i18n/translations";  
+    import { contacts, docs } from "$lib/env";  
+  
+    import SectionHeading from "$components/misc/SectionHeading.svelte";  
+</script>  
+  
+<section id="summary">  
+<SectionHeading  
+    title={$t("about.heading.summary")}  
+    sectionId="summary"  
+/>  
+  
+kac is a simple and secure tool that lets you download content from your favorite platforms —  
+videos, music, photos, and more — all in one place.  
+just paste the link, choose your format, and your content is ready to go.  
+  
+no ads, no tracking, no hidden fees.  
+just a clean and efficient app designed to make downloading easy and private.  
+</section>  
+  
+<section id="motivation">  
+<SectionHeading  
+    title={$t("about.heading.motivation")}  
+    sectionId="motivation"  
+/>  
+  
+kac was created to make content downloading safe, reliable, and accessible for everyone.  
+many download tools on the internet are filled with ads, trackers, or unsafe scripts.  
+kac removes all that — offering a clean, privacy-focused experience built for the user.  
+  
+our goal is simple: give people full control over their downloads without compromising privacy or safety.  
+</section>  
+  
+<section id="privacy-efficiency">  
+<SectionHeading  
+    title={$t("about.heading.privacy_efficiency")}  
+    sectionId="privacy-efficiency"  
+/>  
+  
+all processing within kac is private and secure.  
+requests are handled anonymously, and no personal data is ever collected or stored.  
+  
+when possible, kac processes media directly on your device for faster performance and complete privacy.  
+if server-side processing is required, it is done live in memory only —  
+nothing is written to disk, and everything is erased immediately after the task is complete.  
+  
+kac also supports enhanced privacy modes that route downloads through secure tunnels,  
+keeping your online activity hidden from any external observers, including your internet provider.  
+</section>  
+  
+<section id="community">  
+<SectionHeading  
+    title={$t("about.heading.community")}  
+    sectionId="community"  
+/>  
+  
+kac is built for people who value simplicity, safety, and freedom online.  
+our community includes creators, students, and everyday users who believe in open, secure access to digital content.  
+  
+we continue improving kac with community feedback and ideas, ensuring it stays fast, private, and reliable.  
+together, we aim to make kac the most trusted and user-friendly content downloader available.  
 </section>
