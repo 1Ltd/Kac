@@ -11,11 +11,9 @@
     sectionId="general"
 />
 
-cobalt's privacy policy is simple: we don't collect or store anything about you.
-what you do is solely your business, not ours or anyone else's.
-
-these terms are applicable only when using the official cobalt instance.
-in other cases, you may need to contact the instance hoster for accurate info.
+KAC respects your privacy completely. We do not collect, store, track, or share any personal information about you or your usage.  
+Everything you do within KAC stays on your device and under your control.  
+These terms apply only to the official KAC app and website. For unofficial or modified versions, please contact the provider directly.
 </section>
 
 <section id="local">
@@ -24,9 +22,9 @@ in other cases, you may need to contact the instance hoster for accurate info.
     sectionId="local"
 />
 
-tools that use on-device processing work offline, locally,
-and never send any processed data anywhere.
-they are explicitly marked as such whenever applicable.
+Most KAC tools operate locally on your device.  
+When using such tools, no data leaves your device and nothing is transmitted to any server.  
+Local tools are designed to work offline whenever possible to ensure your full privacy.
 </section>
 
 <section id="saving">
@@ -35,33 +33,10 @@ they are explicitly marked as such whenever applicable.
     sectionId="saving"
 />
 
-when using saving functionality, cobalt may need to proxy or remux/transcode files.
-if that's the case, then a temporary tunnel is created for this purpose
-and minimal required information about the media is stored for 90 seconds.
-
-on an unmodified & official cobalt instance,
-**all tunnel data is encrypted with a key that only the end user has access to**.
-
-encrypted tunnel data may include:
-- origin service's name.
-- original URLs for media files.
-- internal arguments needed to differentiate between types of processing.
-- minimal file metadata (generated filename, title, author, creation year, copyright info).
-- minimal information about the original request that may be used in case of an URL failure during the tunnelling process.
-
-this data is irreversibly purged from server's RAM after 90 seconds.
-no one has access to cached tunnel data, even instance owners,
-as long as cobalt's source code is not modified.
-
-media data from tunnels is never stored/cached anywhere.
-everything is processed live, even during remuxing and transcoding.
-cobalt tunnels function like an anonymous proxy.
-
-if your device supports local processing,
-then encrypted tunnel info includes way less info, because it's returned to client instead.
-
-see the [related source code on github](https://github.com/imputnet/cobalt/tree/main/api/src/stream)
-to learn more about how it works.
+When you download or save content through KAC, the app may temporarily process media files to generate the required output.  
+During this process, only minimal technical data is used for file handling.  
+No personal data, browsing history, or user identity is ever stored or logged.  
+Temporary data is automatically removed after the process completes and never reused for any other purpose.
 </section>
 
 <section id="encryption">
@@ -70,10 +45,9 @@ to learn more about how it works.
     sectionId="encryption"
 />
 
-temporarily stored tunnel data is encrypted using the AES-256 standard.
-decryption keys are only included in the access link and never logged/cached/stored anywhere.
-only the end user has access to the link & encryption keys.
-keys are generated uniquely for each requested tunnel.
+KAC uses strong encryption methods to protect all temporary data handled during downloads or transfers.  
+This ensures that any data processed remains secure and inaccessible to anyone else.  
+All encryption keys are generated dynamically and are never stored or shared.
 </section>
 
 {#if env.PLAUSIBLE_ENABLED}
@@ -83,17 +57,9 @@ keys are generated uniquely for each requested tunnel.
     sectionId="plausible"
 />
 
-we use [plausible](https://plausible.io/) to get an approximate number
-of active cobalt users, fully anonymously. no identifiable information about
-you or your requests is ever stored. all data is anonymized and aggregated.
-we self-host and manage the [plausible instance](https://{env.PLAUSIBLE_HOST}/) that cobalt uses.
-
-plausible doesn't use cookies and is fully compliant with GDPR, CCPA, and PECR.
-
-if you wish to opt out of anonymous analytics, you can do it in [privacy settings](/settings/privacy#analytics).
-if you opt out, the plausible script will not be loaded at all.
-
-[learn more about plausible's dedication to privacy](https://plausible.io/privacy-focused-web-analytics).
+KAC may include optional anonymous usage statistics to help improve stability and performance.  
+These analytics do not include any personal or identifiable information.  
+You can disable analytics anytime in the app’s privacy settings.
 </section>
 {/if}
 
@@ -103,15 +69,7 @@ if you opt out, the plausible script will not be loaded at all.
     sectionId="cloudflare"
 />
 
-we use cloudflare services for:
-- ddos & abuse protection.
-- bot protection (cloudflare turnstile).
-- hosting & deploying the statically rendered web app (cloudflare workers).
-
-all of these are required to provide the best experience for everyone.
-cloudflare is the most private & reliable provider for all mentioned solutions that we know of.
-
-cloudflare is fully compliant with GDPR and HIPAA.
-
-[learn more about cloudflare's dedication to privacy](https://www.cloudflare.com/trust-hub/privacy-and-data-protection/).
+KAC uses secure hosting and protection services to ensure safe and reliable operation.  
+These services are used only to prevent abuse, protect against attacks, and maintain app availability.  
+No personal user data is ever shared with these services beyond what is technically necessary for protection.
 </section>
