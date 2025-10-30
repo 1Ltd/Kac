@@ -7,8 +7,8 @@
 </script>
 
 <svelte:head>
-    <title>{$t("general.cobalt")}</title>
-    <meta property="og:title" content={$t("general.cobalt")} />
+    <title>{$t("general.kac")}</title>
+    <meta property="og:title" content={$t("general.kac")} />
 </svelte:head>
 
 <div id="cobalt-save-container" class="center-column-container">
