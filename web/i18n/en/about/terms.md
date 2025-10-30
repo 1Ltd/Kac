@@ -9,8 +9,9 @@
     sectionId="general"
 />
 
-these terms are applicable only when using the official cobalt instance.
-in other cases, you may need to contact the instance hoster for accurate info.
+these terms apply only when using the official kac app or service.  
+if you are using an unofficial or modified version, please contact the provider or maintainer directly for accurate information.  
+the official kac instance follows strict privacy and ethical guidelines as described here.
 </section>
 
 <section id="saving">
@@ -19,14 +20,12 @@ in other cases, you may need to contact the instance hoster for accurate info.
     sectionId="saving"
 />
 
-saving functionality simplifies downloading content from the internet
-and we take zero liability for what the saved content is used for.
+kac provides tools to help users download and save content from various online platforms.  
+we do not host or store any downloaded files, nor do we track what users download.  
+all processing happens securely and temporarily in memory, and all temporary data is cleared automatically after completion.  
 
-processing servers operate like advanced proxies and don't ever write any requested content to disk.
-everything is handled in RAM and permanently purged once the tunnel is completed.
-we have no downloading logs and cannot identify anyone.
-
-you can learn more about how tunnels work in [privacy policy](/about/privacy).
+users are fully responsible for the content they choose to download, store, or share using kac.  
+kac does not claim ownership of any media processed through its services.
 </section>
 
 <section id="responsibility">
@@ -35,13 +34,11 @@ you can learn more about how tunnels work in [privacy policy](/about/privacy).
     sectionId="responsibility"
 />
 
-you (end user) are responsible for what you do with our tools, how you use and distribute resulting content.
-please be mindful when using content of others and always credit original creators.
-make sure you don't violate any terms or licenses.
+you, the end user, are solely responsible for how you use kac and the content you obtain through it.  
+always respect copyright laws, creator rights, and platform policies when downloading or redistributing any material.  
 
-when used in educational purposes, always cite sources and credit original creators.
-
-fair use and credits benefit everyone.
+if you use kac for educational or informational purposes, always credit original creators and cite your sources.  
+kac encourages ethical use and respect for digital content ownership.
 </section>
 
 <section id="abuse">
@@ -50,10 +47,9 @@ fair use and credits benefit everyone.
     sectionId="abuse"
 />
 
-we have no way of detecting abusive behavior automatically because cobalt is fully anonymous.
-however, you can report such activities to us via email and we'll do our best to comply manually: abuse[at]imput.net
+kac operates with user privacy in mind and does not include any automatic tracking or behavior detection systems.  
+if you encounter misuse, illegal activity, or content violations involving kac, please report it through the official kac contact channels.  
 
-**this email is not intended for user support, you will not get a response if your concern is not related to abuse.**
-
-if you're experiencing issues, you can reach out for support via any preferred method on [the community page](/about/community).
+reports are reviewed manually to ensure fairness and prevent abuse of the reporting system.  
+support-related questions should be directed only to official kac support channels, not to the abuse reporting contacts.
 </section>
