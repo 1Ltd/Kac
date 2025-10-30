@@ -52,17 +52,20 @@ export const shareFile = async (file: File) => {
 }
 
 export const openURL = (url: string) => {
-    if (!['http:', 'https:'].includes(new URL(url).protocol)) {
+    const protocol = new URL(url, window.location.origin).protocol;
+
+    // allow http, https, mailto, and tel links
+    if (!['http:', 'https:', 'mailto:', 'tel:'].includes(protocol)) {
         return alert('error: invalid url!');
     }
 
     const open = window.open(url, "_blank");
 
-    /* if new tab got blocked by user agent, show a saving dialog */
+    // if the new tab got blocked by the browser, show the saving dialog
     if (!open) {
         return openSavingDialog({
             url,
-            body: get(t)("dialog.saving.blocked")
+            body: get(t)("dialog.saving.blocked"),
         });
     }
 }
