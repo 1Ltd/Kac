@@ -18,7 +18,7 @@
         class:one={buttonContainerWidth < 500}
     >
             <AboutSupport
-    platform="mail"
+    platform="email"
     externalLink="mailto:hcaresyou@gmail.com"
 />
     </div>
