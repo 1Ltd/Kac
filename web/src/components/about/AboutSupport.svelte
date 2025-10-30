@@ -11,8 +11,7 @@ const platformIcons = {
         icon: IconMail,
         color: "#d44638",
     },
-    };
-
+};
     export let platform: keyof typeof platformIcons;
     export let externalLink: string;
 </script>
@@ -21,7 +20,7 @@ const platformIcons = {
     class="button support-card"
     role="link"
     on:click={() => {
-        window.open("mailto:hcaresyou@gmail.com");
+        openURL(externalLink);
     }}
 >
     <div class="support-card-header">
