@@ -32,13 +32,11 @@
     <div id="sidebar-tabs" role="tablist">
         <div id="sidebar-actions" class="sidebar-inner-container">
             <SidebarTab name="save" path="/" icon={IconDownload} />
-            {#if !$settings.appearance.hideRemuxTab}
-            {/if}
         </div>
         <div id="sidebar-info" class="sidebar-inner-container">
-            <SidebarTab name="settings" path={settingsLink} icon={IconSettings} />
             <SidebarTab name="updates" path="/updates" icon={IconComet} />
             <SidebarTab name="about" path={aboutLink} icon={IconInfoCircle} />
+            <SidebarTab name="settings" path={settingsLink} icon={IconSettings} />
         </div>
     </div>
 </nav>
