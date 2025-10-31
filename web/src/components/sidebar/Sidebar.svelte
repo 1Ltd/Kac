@@ -101,7 +101,7 @@
         }
 
         #sidebar :global(.sidebar-inner-container:first-child) {
-            padding-left: calc(var(--border-radius) * 1.5);
+            padding-left: calc(var(--border-radius) * 0.5);
         }
 
         #sidebar :global(.sidebar-inner-container:last-child) {
