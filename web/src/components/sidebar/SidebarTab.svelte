@@ -57,8 +57,8 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 25px;
-        padding: var(--sidebar-tab-padding) 3px;
+        gap: 3px;
+        padding: var(--sidebar-tab-padding) 25px;
         color: var(--sidebar-highlight);
         font-size: var(--sidebar-font-size);
         opacity: 0.75;
