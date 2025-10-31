@@ -49,25 +49,38 @@ export const getBranch = async () => {
 }
 
 export const getRemote = async () => {
-    let remote = (await readGit('.git/config'))
-                    ?.split('\n')
-                    ?.find(line => line.includes('url = '))
-                    ?.split('url = ')[1];
+    try {
+        const content = await readGit('.git/config');
+        if (!content) {
+            console.warn("⚠️ No .git/config found — skipping remote info");
+            return null;
+        }
 
-    if (remote?.startsWith('git@')) {
-        remote = remote.split(':')[1];
-    } else if (remote?.startsWith('http')) {
-        remote = new URL(remote).pathname.substring(1);
+        let remote = content
+            ?.split('\n')
+            ?.find(line => line.includes('url = '))
+            ?.split('url = ')[1];
+
+        if (remote?.startsWith('git@')) {
+            remote = remote.split(':')[1];
+        } else if (remote?.startsWith('http')) {
+            remote = new URL(remote).pathname.substring(1);
+        }
+
+        remote = remote?.replace(/\.git$/, '');
+
+        if (!remote) {
+            console.warn("⚠️ Could not parse remote URL — skipping");
+            return null;
+        }
+
+        return remote;
+
+    } catch (err) {
+        console.warn("⚠️ Skipping getRemote — .git/config not found or unreadable");
+        return null;
     }
-
-    remote = remote?.replace(/\.git$/, '');
-
-    if (!remote) {
-        throw 'could not parse remote';
-    }
-
-    return remote;
-}
+};
 
 export const getVersion = async () => {
     if (!pack) {
