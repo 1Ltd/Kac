@@ -26,12 +26,14 @@ const readGit = (filename) => {
     return readFile(join(root, filename), 'utf8');
 }
 
-export const getCommit = async () => {
-    return (await readGit('.git/logs/HEAD'))
-            ?.split('\n')
-            ?.filter(String)
-            ?.pop()
-            ?.split(' ')[1];
+export async function getCommit() {
+  try {
+    const commit = await readFile(".git/logs/HEAD", "utf8");
+    return commit.split("\n").pop().slice(0, 7);
+  } catch (err) {
+    return "unknown"; // fallback when no git info
+  }
+}
 }
 
 export const getBranch = async () => {
