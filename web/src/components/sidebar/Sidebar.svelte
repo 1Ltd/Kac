@@ -52,7 +52,7 @@
     #sidebar {
         background: var(--sidebar-bg);
         height: 100vh;
-        width: calc(var(--sidebar-width) + var(--sidebar-inner-padding) * 50);
+        width: calc(var(--sidebar-width) + var(--sidebar-inner-padding) *2);
         position: sticky;
     }
 
